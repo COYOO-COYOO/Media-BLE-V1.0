@@ -294,10 +294,8 @@ void loop()
             FastLED.show();
         }
         delay(500);
-        for(int i=0; i<NUM_LEDS; i++){
-            leds[i] = leds[i] = CRGB(0, 0, 0);
-            FastLED.show();
-        }
+        FastLED.clear();
+        FastLED.show();
         delay(500);
     }
 }
